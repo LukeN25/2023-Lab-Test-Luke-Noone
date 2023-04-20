@@ -38,9 +38,12 @@ float flagH = 195;
 float stripeW = 400;
 float stripeH = 33;
 
+float flagSizeW = 0;
+float flagSizeH = 0;
+
 void draw()
 {
-  background(0);
+  background(255);
   /*
   for(int i = 0; i < 40; i ++)
   {
@@ -60,8 +63,32 @@ void draw()
   
   noStroke();
   
-  fill(255);
-  rect(100, 100, flagW, flagH);
+  fill(255, 255, 255);
+  rect(100, 600, flagSizeW, flagSizeH);
+  fill(40, 255, 255);
+  rect(100, flagSizeH + 600, flagSizeW, flagSizeH);
+  fill(80, 255, 255);
+  rect(100, (flagSizeH * 2) + 600, flagSizeW, flagSizeH);
+  fill(120, 255, 255);
+  rect(100, (flagSizeH * 3) + 600, flagSizeW, flagSizeH);
+  fill(170, 255, 255);
+  rect(100, (flagSizeH * 4) + 600, flagSizeW, flagSizeH);
+  fill(225, 255, 255);
+  rect(100, (flagSizeH * 5) + 600, flagSizeW, flagSizeH);
+  
+  if(flagSizeW <= 400)
+  {
+    flagSizeW = flagSizeW + 2;
+    flagSizeH = flagSizeH + 0.17;
+  }
+  if(flagSizeW == 400)
+  {
+    flagSizeW = 0;
+    flagSizeH = 0;
+  }
+  
+  
+  /*
   fill(255, 255, 255);
   rect(100, 100, stripeW, stripeH);
   fill(40, 255, 255);
@@ -76,11 +103,39 @@ void draw()
   rect(100, 265, stripeW, stripeH);
   
   fill(0);
-  triangle(100, 100, 100, 300, 200, 200);
+  triangle(100, 100, 100, 300, 300, 200);
   fill(20, 255, 255);
-  triangle(100, 100, 100, 300, 180, 200);
+  triangle(100, 100, 100, 300, 260, 200);
   fill(245, 100, 255);
-  triangle(100, 100, 100, 300, 160, 200);
+  triangle(100, 100, 100, 300, 220, 200);
   fill(40, 255, 255);
-  triangle(100, 100, 100, 300, 140, 200);
+  triangle(100, 100, 100, 300, 180, 200);
+  
+  flagSizeW = flagSizeW + 2;
+  
+  
+  fill(255);
+  rect(500, 600, flagW, flagH);
+  fill(255, 255, 255);
+  rect(500, 600, stripeW, stripeH);
+  fill(40, 255, 255);
+  rect(500, 633, stripeW, stripeH);
+  fill(80, 255, 255);
+  rect(500, 666, stripeW, stripeH);
+  fill(120, 255, 255);
+  rect(500, 699, stripeW, stripeH);
+  fill(170, 255, 255);
+  rect(500, 732, stripeW, stripeH);
+  fill(225, 255, 255);
+  rect(500, 765, stripeW, stripeH);
+  
+  fill(0);
+  triangle(500, 600, 500, 800, 700, 700);
+  fill(20, 255, 255);
+  triangle(500, 600, 500, 800, 660, 700);
+  fill(245, 100, 255);
+  triangle(500, 600, 500, 800, 620, 700);
+  fill(40, 255, 255);
+  triangle(500, 600, 500, 800, 580, 700);
+  */
 }
