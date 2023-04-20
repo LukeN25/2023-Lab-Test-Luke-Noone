@@ -38,8 +38,8 @@ float flagH = 195;
 float stripeW = 400;
 float stripeH = 33;
 
-float flagSizeW = 0;
-float flagSizeH = 0;
+float stripeSizeW = 0;
+float stripeSizeH = 0;
 
 void draw()
 {
@@ -61,32 +61,74 @@ void draw()
   }
   */
   
-  noStroke();
+  strokeWeight(0);
   
   fill(255, 255, 255);
-  rect(100, 600, flagSizeW, flagSizeH);
+  rect(100, 600, stripeSizeW, stripeSizeH);
   fill(40, 255, 255);
-  rect(100, flagSizeH + 600, flagSizeW, flagSizeH);
+  rect(100, stripeSizeH + 600, stripeSizeW, stripeSizeH);
   fill(80, 255, 255);
-  rect(100, (flagSizeH * 2) + 600, flagSizeW, flagSizeH);
+  rect(100, (stripeSizeH * 2) + 600, stripeSizeW, stripeSizeH);
   fill(120, 255, 255);
-  rect(100, (flagSizeH * 3) + 600, flagSizeW, flagSizeH);
+  rect(100, (stripeSizeH * 3) + 600, stripeSizeW, stripeSizeH);
   fill(170, 255, 255);
-  rect(100, (flagSizeH * 4) + 600, flagSizeW, flagSizeH);
+  rect(100, (stripeSizeH * 4) + 600, stripeSizeW, stripeSizeH);
   fill(225, 255, 255);
-  rect(100, (flagSizeH * 5) + 600, flagSizeW, flagSizeH);
+  rect(100, (stripeSizeH * 5) + 600, stripeSizeW, stripeSizeH);
   
-  if(flagSizeW <= 400)
-  {
-    flagSizeW = flagSizeW + 2;
-    flagSizeH = flagSizeH + 0.17;
-  }
-  if(flagSizeW == 400)
-  {
-    flagSizeW = 0;
-    flagSizeH = 0;
-  }
+  fill(0);
+  triangle(100, 600, 100, (stripeSizeH * 6) + 600, (stripeSizeW / 3) + 100, (stripeSizeH * 3) + 600);
+  fill(20, 255, 255);
+  triangle(100, 600, 100, (stripeSizeH * 6) + 600, (stripeSizeW / 4) + 100, (stripeSizeH * 3) + 600);
+  fill(245, 100, 255);
+  triangle(100, 600, 100, (stripeSizeH * 6) + 600, (stripeSizeW / 6) + 100, (stripeSizeH * 3) + 600);
+  fill(40, 255, 255);
+  triangle(100, 600, 100, (stripeSizeH * 6) + 600, (stripeSizeW / 9) + 100, (stripeSizeH * 3) + 600);
   
+  strokeWeight(5);
+  noFill();
+  stroke(200, 255, 255);
+  circle((stripeSizeW / 6) + 100, (stripeSizeH * 3) + 600, stripeSizeW * .1);
+  
+  strokeWeight(0);
+  fill(255, 255, 255);
+  rect(400, 200, stripeSizeW, stripeSizeH);
+  fill(40, 255, 255);
+  rect(400, stripeSizeH + 200, stripeSizeW, stripeSizeH);
+  fill(80, 255, 255);
+  rect(400, (stripeSizeH * 2) + 200, stripeSizeW, stripeSizeH);
+  fill(120, 255, 255);
+  rect(400, (stripeSizeH * 3) + 200, stripeSizeW, stripeSizeH);
+  fill(170, 255, 255);
+  rect(400, (stripeSizeH * 4) + 200, stripeSizeW, stripeSizeH);
+  fill(225, 255, 255);
+  rect(400, (stripeSizeH * 5) + 200, stripeSizeW, stripeSizeH);
+  
+  fill(0);
+  triangle(400, 200, 400, (stripeSizeH * 6) + 200, (stripeSizeW / 3) + 400, (stripeSizeH * 3) + 200);
+  fill(20, 255, 255);
+  triangle(400, 200, 400, (stripeSizeH * 6) + 200, (stripeSizeW / 4) + 400, (stripeSizeH * 3) + 200);
+  fill(245, 100, 255);
+  triangle(400, 200, 400, (stripeSizeH * 6) + 200, (stripeSizeW / 6) + 400, (stripeSizeH * 3) + 200);
+  fill(40, 255, 255);
+  triangle(400, 200, 400, (stripeSizeH * 6) + 200, (stripeSizeW / 9) + 400, (stripeSizeH * 3) + 200);
+  
+  strokeWeight(5);
+  noFill();
+  stroke(200, 255, 255);
+  circle((stripeSizeW / 6) + 400, (stripeSizeH * 3) + 200, stripeSizeW * .1);
+  
+  if(stripeSizeW <= 400)
+  {
+    stripeSizeW = stripeSizeW + 2;
+    stripeSizeH = stripeSizeH + 0.17;
+  }
+  if(stripeSizeW == 400)
+  {
+    stripeSizeW = 0;
+    stripeSizeH = 0;
+  }
+
   
   /*
   fill(255, 255, 255);
@@ -111,7 +153,7 @@ void draw()
   fill(40, 255, 255);
   triangle(100, 100, 100, 300, 180, 200);
   
-  flagSizeW = flagSizeW + 2;
+  stripeSizeW = stripeSizeW + 2;
   
   
   fill(255);
