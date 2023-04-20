@@ -219,6 +219,57 @@ void draw()
   stroke(200, 255, 255);
   circle((stripeSizeW / 6) + (width - 400), (stripeSizeH * 3) + (height - 265), stripeSizeW * .1);
   
+  strokeWeight(0);
+  fill(255, 255, 255);
+  rect(width / 2, 800, stripeSizeW, stripeSizeH);
+  fill(40, 255, 255);
+  rect(width / 2, stripeSizeH + 800, stripeSizeW, stripeSizeH);
+  fill(80, 255, 255);
+  rect(width / 2, (stripeSizeH * 2) + 800, stripeSizeW, stripeSizeH);
+  fill(120, 255, 255);
+  rect(width / 2, (stripeSizeH * 3) + 800, stripeSizeW, stripeSizeH);
+  fill(170, 255, 255);
+  rect(width / 2, (stripeSizeH * 4) + 800, stripeSizeW, stripeSizeH);
+  fill(225, 255, 255);
+  rect(width / 2, (stripeSizeH * 5) + 800, stripeSizeW, stripeSizeH);
+  fill(0);
+  triangle(width / 2, 800, width / 2, (stripeSizeH * 6) + 800, (stripeSizeW / 3) + (width / 2), (stripeSizeH * 3) + 800);
+  fill(20, 255, 255);
+  triangle(width / 2, 800, width / 2, (stripeSizeH * 6) + 800, (stripeSizeW / 4) + (width / 2), (stripeSizeH * 3) + 800);
+  fill(245, 100, 255);
+  triangle(width / 2, 800, width / 2, (stripeSizeH * 6) + 800, (stripeSizeW / 6) + (width / 2), (stripeSizeH * 3) + 800);
+  fill(40, 255, 255);
+  triangle(width / 2, 800, width / 2, (stripeSizeH * 6) + 800, (stripeSizeW / 9) + (width / 2), (stripeSizeH * 3) + 800);
+  strokeWeight(5);
+  noFill();
+  stroke(200, 255, 255);
+  circle((stripeSizeW / 6) + (width / 2), (stripeSizeH * 3) + 800, stripeSizeW * .1);
+  
+  strokeWeight(0);
+  fill(255, 255, 255);
+  rect(width / 2, height / 2, stripeSizeW, stripeSizeH);
+  fill(40, 255, 255);
+  rect(width / 2, stripeSizeH + (height / 2), stripeSizeW, stripeSizeH);
+  fill(80, 255, 255);
+  rect(width / 2, (stripeSizeH * 2) + (height / 2), stripeSizeW, stripeSizeH);
+  fill(120, 255, 255);
+  rect(width / 2, (stripeSizeH * 3) + (height / 2), stripeSizeW, stripeSizeH);
+  fill(170, 255, 255);
+  rect(width / 2, (stripeSizeH * 4) + (height / 2), stripeSizeW, stripeSizeH);
+  fill(225, 255, 255);
+  rect(width / 2, (stripeSizeH * 5) + (height / 2), stripeSizeW, stripeSizeH);
+  fill(0);
+  triangle(width / 2, height / 2, width / 2, (stripeSizeH * 6) + (height / 2), (stripeSizeW / 3) + (width / 2), (stripeSizeH * 3) + (height / 2));
+  fill(20, 255, 255);
+  triangle(width / 2, height / 2, width / 2, (stripeSizeH * 6) + (height / 2), (stripeSizeW / 4) + (width / 2), (stripeSizeH * 3) + (height / 2));
+  fill(245, 100, 255);
+  triangle(width / 2, height / 2, width / 2, (stripeSizeH * 6) + (height / 2), (stripeSizeW / 6) + (width / 2), (stripeSizeH * 3) + (height / 2));
+  fill(40, 255, 255);
+  triangle(width / 2, height / 2, width / 2, (stripeSizeH * 6) + (height / 2), (stripeSizeW / 9) + width / 2, (stripeSizeH * 3) + (height / 2));
+  strokeWeight(5);
+  noFill();
+  stroke(200, 255, 255);
+  circle((stripeSizeW / 6) + (width / 2), (stripeSizeH * 3) + (height / 2), stripeSizeW * .1);
   
   
   if(stripeSizeW <= 400)
