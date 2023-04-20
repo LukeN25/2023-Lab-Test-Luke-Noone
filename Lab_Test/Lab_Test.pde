@@ -33,6 +33,11 @@ void makeFlags(int count)
   }
 }
 
+float flagW = 400;
+float flagH = 195;
+float stripeW = 400;
+float stripeH = 33;
+
 void draw()
 {
   background(0);
@@ -52,14 +57,30 @@ void draw()
     flag.render();
   }
   */
-  fill(255);
-  rect(100, 100, 400, 200);
-  rect(100, 100, 400, 33);
-  rect(100, 133, 400, 33);
-  rect(100, 166, 400, 33);
-  rect(100, 199, 400, 33);
-  rect(100, 232, 400, 33);
-  rect(100, 265, 400, 33);
   
+  noStroke();
+  
+  fill(255);
+  rect(100, 100, flagW, flagH);
+  fill(255, 255, 255);
+  rect(100, 100, stripeW, stripeH);
+  fill(40, 255, 255);
+  rect(100, 133, stripeW, stripeH);
+  fill(80, 255, 255);
+  rect(100, 166, stripeW, stripeH);
+  fill(120, 255, 255);
+  rect(100, 199, stripeW, stripeH);
+  fill(170, 255, 255);
+  rect(100, 232, stripeW, stripeH);
+  fill(225, 255, 255);
+  rect(100, 265, stripeW, stripeH);
+  
+  fill(0);
   triangle(100, 100, 100, 300, 200, 200);
+  fill(20, 255, 255);
+  triangle(100, 100, 100, 300, 180, 200);
+  fill(245, 100, 255);
+  triangle(100, 100, 100, 300, 160, 200);
+  fill(40, 255, 255);
+  triangle(100, 100, 100, 300, 140, 200);
 }
